@@ -1,4 +1,5 @@
 from rest_framework import serializers
+
 from .models import Flowers
 
 class FlowersSerializer(serializers.ModelSerializer):
@@ -13,5 +14,4 @@ class FlowersSerializer(serializers.ModelSerializer):
             "is_in_stock",
             "created_at",
         )
-
         model = Flowers

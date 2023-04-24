@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import FlowesList, FLowersDetail
+from .views import FlowersList, FlowersDetail
 
 
 urlpatterns = [
