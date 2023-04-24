@@ -11,7 +11,7 @@ class FlowersList(generics.ListCreateAPIView):
     serializer_class = FlowersSerializer
 
 class FlowersDetail(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes = (permissions.IsAdminUser,) # new
+    # permission_classes = (permissions.IsAdminUser,) # new
     queryset = Flowers.objects.all()
     serializer_class = FlowersSerializer
 
